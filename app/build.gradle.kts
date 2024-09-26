@@ -48,10 +48,10 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation ("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation ("com.squareup.retrofit2:converter-scalars:2.11.0")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
 
     implementation ("com.google.code.gson:gson:2.11.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.11.0")
 
     val lifecycle_version = "2.8.6"
 

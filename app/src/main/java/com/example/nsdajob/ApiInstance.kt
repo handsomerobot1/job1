@@ -1,6 +1,7 @@
 package com.example.nsdajob
 
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiInstance {
 val retrofit =Retrofit.Builder()
