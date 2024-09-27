@@ -13,11 +13,17 @@ import com.example.nsdajob.R
 class ProductAdapter(private val products:List<Product>):RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
     inner class ProductViewHolder(itemView:View):RecyclerView.ViewHolder(itemView) {
         val productImg = itemView.findViewById<ImageView>(R.id.imageView)
+        val productId = itemView.findViewById<TextView>(R.id.productRv)
         val productName = itemView.findViewById<TextView>(R.id.nameTxt)
         val productPrice = itemView.findViewById<TextView>(R.id.priceTxt)
+        val productdescription =  itemView.findViewById<TextView>(R.id.product_dstn)
         fun bind(product:Product){
+            productId.text= product.id.toString()
             productName.text = product.title
             productPrice.text = "$${product.title}"
+            productdescription.text =product.description
+
+
             Glide.with(itemView).load(product.images[0])
                 .into(productImg)
 
