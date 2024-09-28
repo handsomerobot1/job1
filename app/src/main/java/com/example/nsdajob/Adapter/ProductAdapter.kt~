@@ -20,7 +20,7 @@ class ProductAdapter(private val products:List<Product>):RecyclerView.Adapter<Pr
         fun bind(product:Product){
             productId.text= product.id.toString()
             productName.text = product.title
-            productPrice.text = "$${product.price}"
+            productPrice.text = "$${product.title}"
             productdescription.text =product.description
 
 
